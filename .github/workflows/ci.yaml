@@ -1,9 +1,9 @@
 #https://dev.to/jamiemagee/how-to-host-your-helm-chart-repository-on-github-3kd
 name: Lint and Test Charts
-
 on:
-  pull_request:
-
+  push: # in the article they use pull requests for proper CI; but I'm happy for this to take place alongside cd, since this is a one off
+    branches:
+      - master
 jobs:
 
   lint-chart:

@@ -1,12 +1,8 @@
 name: Release Charts
-
 on:
   push:
     branches:
       - master
-    paths:
-      - './**'
-
 jobs:
   release:
     runs-on: ubuntu-latest
